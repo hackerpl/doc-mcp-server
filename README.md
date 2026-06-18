@@ -23,7 +23,7 @@ uvx ftp-doc-reader
 ### 从源码安装
 
 ```bash
-git clone https://github.com/your-username/doc-mcp-server.git
+git clone https://github.com/hackerpl/doc-mcp-server.git
 cd doc-mcp-server
 pip install -e .
 ```
@@ -95,14 +95,14 @@ pip install -e .
 }
 ```
 
-### 本地开发（使用源码路径）
+### 本地开发（使用 GitHub 源码）
 
 ```json
 {
   "mcpServers": {
     "ftp-doc-reader": {
       "command": "uvx",
-      "args": ["--from", "/path/to/doc-mcp-server", "ftp-doc-reader"],
+      "args": ["--from", "git+https://github.com/hackerpl/doc-mcp-server.git", "ftp-doc-reader"],
       "env": {
         "FTP_HOST": "ftp.example.com",
         "FTP_USERNAME": "your_username",
