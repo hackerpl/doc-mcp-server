@@ -13,6 +13,11 @@ authors = [
     { name = "FTP Doc Reader Team" },
 ]
 
+[project.urls]
+Homepage = "https://github.com/hackerpl/doc-mcp-server"
+Repository = "https://github.com/hackerpl/doc-mcp-server"
+Issues = "https://github.com/hackerpl/doc-mcp-server/issues"
+
 dependencies = [
     "mcp",
     "python-dotenv",
